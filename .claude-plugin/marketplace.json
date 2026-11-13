@@ -1,0 +1,28 @@
+{
+  "name": "silo-systems",
+  "owner": {
+    "name": "Silo Systems",
+    "email": "admin@ohmslaw.net"
+  },
+  "metadata": {
+    "description": "Plugins that connect Claude Code and Codex to Silo Systems apps for Mac, starting with document search in Silo Vault.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "silo-vault",
+      "source": "./plugins/silo-vault",
+      "description": "Search PDFs, notes and spreadsheets indexed in Silo Vault for Mac, then read source passages for cited answers. Requires Silo Vault from the Mac App Store.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Silo Systems",
+        "email": "admin@ohmslaw.net"
+      },
+      "homepage": "https://ohmslaw.net/apps/silovault",
+      "repository": "https://github.com/silo-systems/plugins",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": ["mcp", "search", "citations", "pdf", "notes", "local", "macos"]
+    }
+  ]
+}

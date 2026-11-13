@@ -1,0 +1,14 @@
+{
+  "name": "silo-vault",
+  "version": "1.0.0",
+  "description": "Search PDFs, notes and spreadsheets indexed in Silo Vault for Mac, then read source passages for cited answers. Requires Silo Vault from the Mac App Store.",
+  "author": {
+    "name": "Silo Systems",
+    "email": "admin@ohmslaw.net",
+    "url": "https://ohmslaw.net"
+  },
+  "homepage": "https://ohmslaw.net/apps/silovault",
+  "repository": "https://github.com/silo-systems/plugins",
+  "license": "MIT",
+  "keywords": ["mcp", "search", "citations", "pdf", "notes", "local", "macos"]
+}
