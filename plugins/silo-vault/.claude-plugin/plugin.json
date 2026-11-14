@@ -9,6 +9,10 @@
   },
   "homepage": "https://ohmslaw.net/apps/silovault",
   "repository": "https://github.com/silo-systems/plugins",
+  "documentationUrl": "https://github.com/silo-systems/plugins/tree/main/plugins/silo-vault#readme",
+  "supportUrl": "https://ohmslaw.net/apps/silovault/support",
+  "privacyPolicyUrl": "https://ohmslaw.net/apps/silovault/privacy",
+  "termsOfServiceUrl": "https://github.com/silo-systems/plugins/blob/main/LICENSE",
   "license": "MIT",
   "keywords": ["mcp", "search", "citations", "pdf", "notes", "local", "macos"]
 }
