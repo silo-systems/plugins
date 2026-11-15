@@ -33,6 +33,29 @@
       ]
     },
     {
+      "name": "silo-gif",
+      "source": "./plugins/silo-gif",
+      "description": "Turn screen recordings into GIFs that fit your size limit with Silo Gif from the Mac App Store, through a shortcut you set up once.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Silo Systems",
+        "email": "admin@ohmslaw.net"
+      },
+      "homepage": "https://ohmslaw.net/apps/silo-gif",
+      "repository": "https://github.com/silo-systems/plugins",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "gif",
+        "video",
+        "screen-recording",
+        "shortcuts",
+        "pull-request",
+        "local",
+        "macos"
+      ]
+    },
+    {
       "name": "silo-redact",
       "source": "./plugins/silo-redact",
       "description": "Redact a PDF with Silo Redact for Mac, from the Mac App Store, before your assistant reads it. The plugin tells your assistant to work only from the copy Silo Redact verified.",

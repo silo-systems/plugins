@@ -1,0 +1,18 @@
+{
+  "name": "silo-gif",
+  "version": "1.0.0",
+  "description": "Turn screen recordings into GIFs that fit your size limit with Silo Gif from the Mac App Store, through a shortcut you set up once.",
+  "author": {
+    "name": "Silo Systems",
+    "email": "admin@ohmslaw.net",
+    "url": "https://ohmslaw.net"
+  },
+  "homepage": "https://ohmslaw.net/apps/silo-gif",
+  "repository": "https://github.com/silo-systems/plugins",
+  "documentationUrl": "https://github.com/silo-systems/plugins/tree/main/plugins/silo-gif#readme",
+  "supportUrl": "https://ohmslaw.net/apps/silo-gif/support",
+  "privacyPolicyUrl": "https://ohmslaw.net/apps/silo-gif/privacy",
+  "termsOfServiceUrl": "https://github.com/silo-systems/plugins/blob/main/LICENSE",
+  "license": "MIT",
+  "keywords": ["gif", "video", "screen-recording", "shortcuts", "pull-request", "local", "macos"]
+}

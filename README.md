@@ -5,6 +5,7 @@ Free plugins that connect Claude Code and Codex to Silo Systems apps on your Mac
 | Plugin | What it does | Needs |
 |---|---|---|
 | [silo-vault](plugins/silo-vault) | Searches PDFs, notes and spreadsheets, then reads source passages for cited answers | Silo Vault for Mac |
+| [silo-gif](plugins/silo-gif) | Turns screen recordings into GIFs that fit a size limit, through a shortcut you set up once | Silo Gif for Mac |
 | [silo-redact](plugins/silo-redact) | Has you redact a PDF in Silo Redact first, then tells your AI tool to read only the copy Silo Redact verified | Silo Redact for Mac |
 | [silo-transcribe](plugins/silo-transcribe) | Opens a recording in Silo Transcribe, then works from the transcript you export: summaries, decisions, quotes and notes | Silo Transcribe for Mac |
 
