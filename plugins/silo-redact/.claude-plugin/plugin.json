@@ -1,0 +1,18 @@
+{
+  "name": "silo-redact",
+  "version": "1.0.0",
+  "description": "Redact a PDF with Silo Redact for Mac, from the Mac App Store, before your assistant reads it. The plugin tells your assistant to work only from the copy Silo Redact verified.",
+  "author": {
+    "name": "Silo Systems",
+    "email": "admin@ohmslaw.net",
+    "url": "https://ohmslaw.net"
+  },
+  "homepage": "https://ohmslaw.net/apps/silo-redact",
+  "repository": "https://github.com/silo-systems/plugins",
+  "documentationUrl": "https://github.com/silo-systems/plugins/tree/main/plugins/silo-redact#readme",
+  "supportUrl": "https://ohmslaw.net/apps/silo-redact/support",
+  "privacyPolicyUrl": "https://ohmslaw.net/apps/silo-redact/privacy",
+  "termsOfServiceUrl": "https://github.com/silo-systems/plugins/blob/main/LICENSE",
+  "license": "MIT",
+  "keywords": ["redaction", "pdf", "privacy", "documents", "local", "macos"]
+}

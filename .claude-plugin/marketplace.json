@@ -5,8 +5,8 @@
     "email": "admin@ohmslaw.net"
   },
   "metadata": {
-    "description": "Plugins that connect Claude Code and Codex to Silo Systems apps for Mac, starting with document search in Silo Vault.",
-    "version": "1.0.0"
+    "description": "Plugins that connect Claude Code and Codex to Silo Systems apps for Mac.",
+    "version": "1.1.0"
   },
   "plugins": [
     {
@@ -22,7 +22,37 @@
       "repository": "https://github.com/silo-systems/plugins",
       "license": "MIT",
       "category": "productivity",
-      "keywords": ["mcp", "search", "citations", "pdf", "notes", "local", "macos"]
+      "keywords": [
+        "mcp",
+        "search",
+        "citations",
+        "pdf",
+        "notes",
+        "local",
+        "macos"
+      ]
+    },
+    {
+      "name": "silo-redact",
+      "source": "./plugins/silo-redact",
+      "description": "Redact a PDF with Silo Redact for Mac, from the Mac App Store, before your assistant reads it. The plugin tells your assistant to work only from the copy Silo Redact verified.",
+      "version": "1.0.0",
+      "author": {
+        "name": "Silo Systems",
+        "email": "admin@ohmslaw.net"
+      },
+      "homepage": "https://ohmslaw.net/apps/silo-redact",
+      "repository": "https://github.com/silo-systems/plugins",
+      "license": "MIT",
+      "category": "productivity",
+      "keywords": [
+        "redaction",
+        "pdf",
+        "privacy",
+        "documents",
+        "local",
+        "macos"
+      ]
     }
   ]
 }
