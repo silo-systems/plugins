@@ -1,11 +1,12 @@
 # Silo Systems plugins
 
-Free plugins that connect Claude Code and Codex to Silo Systems apps on your Mac. Each plugin needs its app from the Mac App Store. The apps work on your Mac by default. Your AI tool may send what it reads to its cloud provider.
+Free plugins that connect Claude Code and Codex to Silo Systems apps on your Mac. Each plugin needs its app from the Mac App Store. The apps work on your Mac by default. Silo Transcribe can also transcribe through a provider or server you set up, if you turn that on. Your AI tool may send what it reads to its cloud provider.
 
 | Plugin | What it does | Needs |
 |---|---|---|
 | [silo-vault](plugins/silo-vault) | Searches PDFs, notes and spreadsheets, then reads source passages for cited answers | Silo Vault for Mac |
 | [silo-redact](plugins/silo-redact) | Has you redact a PDF in Silo Redact first, then tells your AI tool to read only the copy Silo Redact verified | Silo Redact for Mac |
+| [silo-transcribe](plugins/silo-transcribe) | Opens a recording in Silo Transcribe, then works from the transcript you export: summaries, decisions, quotes and notes | Silo Transcribe for Mac |
 
 Each plugin's guide covers setup, what your AI tool receives, which commands to allow and how to remove it. Read it before you install.
 

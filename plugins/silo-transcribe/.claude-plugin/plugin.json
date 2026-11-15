@@ -1,0 +1,18 @@
+{
+  "name": "silo-transcribe",
+  "version": "1.0.0",
+  "description": "Open a recording in Silo Transcribe, the Mac App Store app that transcribes recordings on your Mac by default, then summarise it, pull out its decisions and quotes, or draft notes from the transcript you export.",
+  "author": {
+    "name": "Silo Systems",
+    "email": "admin@ohmslaw.net",
+    "url": "https://ohmslaw.net"
+  },
+  "homepage": "https://ohmslaw.net/apps/silo-transcribe",
+  "repository": "https://github.com/silo-systems/plugins",
+  "documentationUrl": "https://github.com/silo-systems/plugins/tree/main/plugins/silo-transcribe#readme",
+  "supportUrl": "https://ohmslaw.net/apps/silo-transcribe/support",
+  "privacyPolicyUrl": "https://ohmslaw.net/apps/silo-transcribe/privacy",
+  "termsOfServiceUrl": "https://github.com/silo-systems/plugins/blob/main/LICENSE",
+  "license": "MIT",
+  "keywords": ["transcription", "transcripts", "summaries", "meeting-notes", "quotes", "audio", "local", "macos"]
+}
