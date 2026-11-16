@@ -16,7 +16,7 @@ You can't listen to audio. Silo Transcribe transcribes the recording (on this Ma
 ## Hand over the recording
 
 1. Ask for the recording's path, starting `/` or `~`. If the user already exported a transcript, ask for its path and go to "Read the transcript".
-2. Run `ls -d '/Applications/Silo Transcribe.app'`. If it isn't listed, run `uname -s`, tell the user and stop: if it doesn't print `Darwin`, this works only on the user's Mac; otherwise Silo Transcribe isn't installed and comes from the Mac App Store.
+2. Run `uname -s`. If it prints anything but `Darwin`, tell the user this works only on their Mac and stop; if it's declined, carry on. Don't check for the app here: a declined `ls` would look like a missing app, and step 6's `open` reports one.
 3. Run `ls -ld '<recording>'`. None of these is a failed conversion:
    - No such file: ask them to copy its path in Finder (Option-right-click, Copy as Pathname).
    - Operation not permitted: ask them to allow folder access in System Settings > Privacy & Security > Files & Folders, or to move the recording.
@@ -31,7 +31,7 @@ You can't listen to audio. Silo Transcribe transcribes the recording (on this Ma
    3. Tell the user the copy's full path, and that you'll delete it.
    - Use a new folder per recording and never write the copy elsewhere: `afconvert` replaces files without asking.
    - Fallback: if `mktemp -d` or `afconvert` fails, is declined or stays blocked, clean up as in "Delete the WAV copy" and ask for a WAV, MP3 or FLAC copy. Never hand Silo Transcribe the original.
-6. Run `open -a '/Applications/Silo Transcribe.app'` with no file, and ask the user to say when its session list shows with nothing in front of it; a file handed over earlier can fail to import. Tell them it needs Microphone access, even for files (Skip System Audio is fine), and its local models, about 4.5 GB on a first run.
+6. Run `open -a '/Applications/Silo Transcribe.app'` with no file. If it says it can't find the app, clean up as in "Delete the WAV copy", tell the user Silo Transcribe isn't installed and comes from the Mac App Store, and stop. Then ask the user to say when its session list shows with nothing in front of it; a file handed over earlier can fail to import. Tell them it needs Microphone access, even for files (Skip System Audio is fine), and its local models, about 4.5 GB on a first run.
 7. Once the list shows, run `open -a '/Applications/Silo Transcribe.app' '<path>'` with the recording or WAV copy. It imports and starts transcribing; nothing comes back to you.
 8. Tell the user:
    - When the bar above the transcript reads "All N parts processed.", press TXT beside "Export transcript" (or Export Summary) in the AI Summary tab, reopening it if TXT is missing.
@@ -59,5 +59,5 @@ Never use `rm -r`, a wildcard or a shell variable. If you lost the exact path, d
 
 ## When it can't work
 
-- If `open` fails outside a sandbox or is declined, ask the user to start Silo Transcribe, wait for its session list, then use Finder's Open With > Silo Transcribe: the recording if it is WAV, MP3, FLAC, OGG or Opus, else the WAV copy, reached with Go > Go to Folder and the path you give. If you deleted the copy, make a new one first; never `open` a deleted path. Then continue from step 8.
+- If `open` is declined, or fails outside a sandbox for any reason but a missing app (step 6), ask the user to start Silo Transcribe, wait for its session list, then use Finder's Open With > Silo Transcribe: the recording if it is WAV, MP3, FLAC, OGG or Opus, else the WAV copy, reached with Go > Go to Folder and the path you give. If you deleted the copy, make a new one first; never `open` a deleted path. Then continue from step 8.
 - If the import fails twice while the session list showed, the file may be damaged: ask for a WAV or MP3 copy.
